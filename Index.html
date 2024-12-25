@@ -6,6 +6,7 @@
     <title>Genuine</title>
     <!--style-css-->
     <link rel="stylesheet" href="index.css" />
+    <link rel="icon" href="./detail/img/Genuine.png" />
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
@@ -137,6 +138,7 @@
       <section
         class="card-section d-flex flex-wrap justify-content-center gap-5 p-4"
       >
+        <!-- Product Card -->
         <div class="card" style="width: 23rem">
           <img
             src="https://www.genuinescooters.com/cdn/shop/files/CU500-Main-black_5c5bb890-1965-48e3-99ff-8b5bfcc1a152.jpg?v=1711001863&width=500"
@@ -149,18 +151,249 @@
             <a href="#" class="btn btn-primary">View Details</a>
           </div>
         </div>
-        <div class="card" style="width: 23rem">
-          <img
-            src="https://www.genuinescooters.com/cdn/shop/files/CU500-Main-white_c535da49-6063-4cb2-ae09-d8cdd6c9f789.jpg?v=1711001863&width=500"
-            class="card-img-top"
-            alt="product"
-          />
-          <div class="card-body">
-            <h5 class="card-title">CU 500</h5>
-            <p class="card-text">Genuine eBikes</p>
-            <a href="#" class="btn btn-primary">View Details</a>
-          </div>
+      </section>
+
+      <!--About CU 500-->
+      <section class="info-section">
+        <h5 class="h5-tap-title"></h5>
+        <div class="tab-titles">
+          <button class="tab-button active" data-tab="capacity-table">
+            Capacity/Dimensions
+          </button>
+          <button class="tab-button" data-tab="specification-table">
+            Specification
+          </button>
         </div>
+
+        <div class="tab-content">
+          <!-- Capacity/Dimensions Table -->
+          <table id="capacity-table" class="info-table active">
+            <thead>
+              <tr>
+                <th>Specification</th>
+                <th>Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Cargo Capacity</td>
+                <td>300 lbs</td>
+              </tr>
+              <tr>
+                <td>Curb Weight</td>
+                <td>62 lbs</td>
+              </tr>
+              <tr>
+                <td>Length</td>
+                <td>73 in</td>
+              </tr>
+              <tr>
+                <td>Handlebar Height</td>
+                <td>46.5 in</td>
+              </tr>
+              <tr>
+                <td>Width</td>
+                <td>26 in</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- Specification Table -->
+          <table id="specification-table" class="info-table">
+            <thead>
+              <tr>
+                <th>Specification</th>
+                <th>Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Battery Type</td>
+                <td>Lithium-Ion</td>
+              </tr>
+              <tr>
+                <td>Motor Power</td>
+                <td>500W</td>
+              </tr>
+              <tr>
+                <td>Top Speed</td>
+                <td>28 mph</td>
+              </tr>
+              <tr>
+                <td>Range</td>
+                <td>60 miles</td>
+              </tr>
+              <tr>
+                <td>Charging Time</td>
+                <td>4 hours</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <style>
+          .higlights {
+            margin: 40px;
+          }
+
+          .hight-title {
+            font-size: 2.5rem;
+          }
+
+          .higlights p {
+            font-size: 1rem;
+          }
+
+          .highlight-info {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            padding: 20px;
+            border-radius: 8px;
+          }
+
+          .high {
+            flex: 0 0 auto;
+            width: 300px;
+            height: 350px;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+          }
+
+          .high img {
+            max-width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            border: 2px solid #333;
+          }
+
+          .high .title-product {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #333;
+            margin: 15px 0;
+          }
+
+          .high p {
+            font-size: 1rem;
+            color: #666;
+            line-height: 1.5;
+          }
+
+          .highlight-info::-webkit-scrollbar {
+            height: 8px;
+          }
+
+          .highlight-info::-webkit-scrollbar-thumb {
+            background-color: #ccc;
+            border-radius: 4px;
+          }
+
+          .highlight-info::-webkit-scrollbar-track {
+            background-color: #f9f9f9;
+          }
+
+          .high:hover {
+            transform: translateY(-5px);
+          }
+
+          .info-section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            font-family: Arial, sans-serif;
+          }
+
+          .tab-titles {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+          }
+
+          .tab-button {
+            padding: 10px 20px;
+            margin: 0 5px;
+            border: 1px solid #ddd;
+            background-color: #f8f9fa;
+            cursor: pointer;
+            font-size: 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+          }
+
+          .tab-button.active {
+            background-color: #007bff;
+            color: #fff;
+            font-weight: bold;
+          }
+
+          .tab-button:hover {
+            background-color: #0056b3;
+            color: #fff;
+          }
+
+          .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: none;
+          }
+
+          .info-table.active {
+            display: table;
+          }
+
+          .info-table th,
+          .info-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+            font-size: 1rem;
+          }
+
+          .info-table thead {
+            background-color: #f8f9fa;
+          }
+
+          .info-table th {
+            font-weight: bold;
+            text-transform: uppercase;
+          }
+
+          .info-table tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+          }
+
+          .info-table tbody tr:hover {
+            background-color: #f1f1f1;
+          }
+        </style>
+
+        <script>
+          // JavaScript for interactivity
+          document.addEventListener("DOMContentLoaded", () => {
+            const buttons = document.querySelectorAll(".tab-button");
+            const tables = document.querySelectorAll(".info-table");
+
+            buttons.forEach((button) => {
+              button.addEventListener("click", () => {
+                // Remove active class from all buttons and tables
+                buttons.forEach((btn) => btn.classList.remove("active"));
+                tables.forEach((table) => table.classList.remove("active"));
+
+                // Add active class to the clicked button and corresponding table
+                button.classList.add("active");
+                const tableId = button.getAttribute("data-tab");
+                document.getElementById(tableId).classList.add("active");
+              });
+            });
+          });
+        </script>
       </section>
 
       <!-- Brand Section -->
@@ -250,89 +483,160 @@
         </div>
       </section>
 
+      <!-- Form Section -->
+      <div class="container">
+        <div class="product-card text-center py-4 px-3">
+          <h1 class="fw-bold">Genuine Pre-Sale</h1>
+          <p class="fw-bold mt-4">
+            Thank you for your interest. Let's get started! Fill up the form
+            below, and we’ll be in touch soon.
+          </p>
+        </div>
+
+        <style>
+          .form-group {
+            margin-bottom: 1.5rem; /* Adjust spacing between elements */
+          }
+
+          .form-control {
+            background-color: pink; /* Retain pink background */
+          }
+
+          .row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .row input {
+            margin: 8px;
+            width: 97%;
+          }
+        </style>
+
+        <form class="mt-4">
+          <div class="row">
+            <!-- First Name -->
+            <div class="col-md-6">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="First Name"
+                required
+              />
+            </div>
+
+            <!-- Last Name -->
+            <div class="col-md-6">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Last Name"
+                required
+              />
+            </div>
+
+            <!-- Phone Number -->
+            <div class="col-md-6 form-group">
+              <input
+                type="number"
+                id="Phone"
+                class="form-control"
+                placeholder="Phone Number"
+                required
+              />
+            </div>
+
+            <!-- Email Address -->
+            <div class="col-md-6 form-group">
+              <input
+                type="email"
+                id="email"
+                class="form-control"
+                placeholder="Email Address"
+                required
+              />
+            </div>
+
+            <!-- Message -->
+            <div class="col-12 form-group">
+              <textarea
+                class="form-control"
+                placeholder="Message"
+                style="height: 10rem"
+                required
+              ></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="col-12 text-end">
+              <button class="btn btn-warning" type="submit">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
       <!-- Footer -->
       <footer class="bg-white py-5">
-        <div class="container d-flex justify-content-between">
-          <div>
+        <div
+          class="container d-flex flex-column flex-lg-row justify-content-between"
+        >
+          <div class="mb-4 mb-lg-0">
             <img
-              src="./img/logo.jpg"
+              src="./detail/img/Genuine.png"
               alt="logo"
-              style="width: 100px; height: auto"
+              class="img-fluid mb-2"
+              style="width: 100px"
             />
-            <p>
-              <strong
-                >Stay informed on all <br />things Genuine when <br />you sign
-                up for our <br />newsletter.</strong
-              >
+            <p class="fw-bold">
+              Stay informed about all <br />
+              things Genuine. Sign up for <br />
+              our newsletter.
             </p>
             <div class="d-flex">
               <input
                 type="email"
                 class="form-control me-2"
                 placeholder="Enter your email"
-                aria-label="Email Address"
               />
               <button class="btn btn-primary">Subscribe</button>
             </div>
           </div>
-
-          <div>
-            <h3 class="font-weight-bold">Follow us</h3>
-            <div class="social-icons d-flex flex-column">
-              <div class="mt-1">
-                <a
-                  class="text-dark"
-                  href="https://facebook.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Facebook"
-                >
-                  <i class="fab fa-facebook fa-2x"></i>
-                </a>
-              </div>
-
-              <div class="mt-3">
-                <a
-                  class="text-dark"
-                  href="https://instagram.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Instagram"
-                >
-                  <i class="fab fa-instagram fa-2x"></i>
-                </a>
-              </div>
-            </div>
+          <div class="mb-4 mb-lg-0">
+            <h3>Follow Us</h3>
+            <a
+              href="https://www.facebook.com/genuinescooters"
+              target="_blank"
+              class="d-block text-dark text-decoration-none"
+            >
+              <i class="fab fa-facebook text-d"></i> Genuine Scooters
+            </a>
+            <a
+              href="https://www.instagram.com/genuinescooters?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              target="_blank"
+              class="d-block text-dark text-decoration-none"
+            >
+              <i class="fab fa-instagram"></i> genuinescooters
+            </a>
           </div>
-
           <div>
-            <h3 class="font-weight-bold">Payment</h3>
-            <ul class="list-unstyled">
-              <li>
-                <input type="radio" id="item1" name="payment-method" />
-                <label for="item1">ABA</label>
-              </li>
-              <li>
-                <input type="radio" id="item2" name="payment-method" />
-                <label for="item2">AMRET</label>
-              </li>
-              <li>
-                <input type="radio" id="item3" name="payment-method" />
-                <label for="item3">ACLEDA</label>
-              </li>
-            </ul>
-            <label for="visa-number" class="fw-bold">Visa Card Number</label>
-            <input
-              type="text"
-              id="visa-number"
-              name="visa-number"
-              class="form-control"
-              placeholder="Enter your Visa card number"
-              maxlength="16"
-              pattern="[0-9]{16}"
-              required
-            />
-            <button id="pay-now" class="btn btn-primary mt-2">Pay Now</button>
+            <h3>Payment</h3>
+            <form>
+              <ul class="list-unstyled">
+                <li><input type="radio" name="payment-method" /> ABA</li>
+                <li><input type="radio" name="payment-method" /> AMRET</li>
+                <li><input type="radio" name="payment-method" /> ACLEDA</li>
+              </ul>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Visa Card Number"
+                maxlength="16"
+                pattern="[0-9]{16}"
+                required
+              />
+              <button class="btn btn-primary mt-2">Pay Now</button>
+            </form>
           </div>
         </div>
       </footer>
