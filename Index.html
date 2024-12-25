@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Genuine</title>
+    <!--style-css-->
+    <link rel="stylesheet" href="index.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <style>
+      /* Ensure no padding or margin on body or html */
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+      }
+
+      /* Remove container-fluid padding */
+      .container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+      }
+
+      /* Ensure no gutters in Bootstrap rows */
+      .row {
+        margin: 0;
+        --bs-gutter-x: 0;
+        --bs-gutter-y: 0;
+      }
+
+      /* Optional: if you want to make sure the header spans full width */
+      header {
+        width: 100%;
+        padding: 0;
+      }
+
+      /* Debugging Outline for Elements */
+      /* Uncomment to debug */
+      /* * {
+        outline: 1px solid red;
+      } */
+
+      /* E-Bike Section */
+      .e-bike {
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+      }
+
+      /* Card Section */
+      .card-section {
+        gap: 2rem;
+      }
+
+      /* Footer adjustments */
+      footer {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body class="bg-light">
+    <div class="container-fluid">
+      <!-- Header -->
+      <header
+        class="d-flex justify-content-between align-items-center p-2 bg-white"
+      >
+        <a href="./Index.html" class="logo ms-5">
+          <img
+            src="https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/897/800/original/Genuine_Logo_JB.png?1596225996"
+            width="70"
+            alt="logo"
+          />
+        </a>
+        <!-- Navbar -->
+        <nav>
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="./Index.html" class="nav-link text-dark">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-dark">Genuine</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-dark">Genuine Pre-Sale</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Cart Button -->
+        <a href="#" class="btn btn-warning text-dark fw-bold mx-5">Cart</a>
+      </header>
+
+      <!-- e-bike Section -->
+      <section
+        class="e-bike d-flex justify-content-center align-items-center text-white"
+        style="
+          background-image: url('https://www.genuinescooters.com/cdn/shop/files/eBike-Collection-banner.webp?v=1712855821&width=1400');
+          background-size: cover;
+          height: 60vh;
+        "
+      >
+        <div class="w-100 h-100" style="background-color: rgba(0, 0, 0, 0.5)">
+          <div
+            class="align-items-center d-flex p-5 justify-content-start h-100"
+          >
+            <div>
+              <h1 class="display-4 fw-bold mb-4">eBike</h1>
+              <p class="lead">
+                Genuine is an industry leader in fun and two-wheel
+                transportation.<br />
+                Everyone loves to ride, but not everyone wants an engine under
+                the seat.<br />
+                The answer is one of our new eBikes. Genuine eBikes are fun to
+                ride,<br />
+                easy to use, and good for the environment. Designed with
+                confidence,<br />
+                Genuine eBikes will get you safely to your destination and
+                beyond.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Card Product Section -->
+      <section
+        class="card-section d-flex flex-wrap justify-content-center gap-5 p-4"
+      >
+        <div class="card" style="width: 23rem">
+          <img
+            src="https://www.genuinescooters.com/cdn/shop/files/CU500-Main-black_5c5bb890-1965-48e3-99ff-8b5bfcc1a152.jpg?v=1711001863&width=500"
+            class="card-img-top"
+            alt="product"
+          />
+          <div class="card-body">
+            <h5 class="card-title">CU 500</h5>
+            <p class="card-text">Genuine eBikes</p>
+            <a href="#" class="btn btn-primary">View Details</a>
+          </div>
+        </div>
+        <div class="card" style="width: 23rem">
+          <img
+            src="https://www.genuinescooters.com/cdn/shop/files/CU500-Main-white_c535da49-6063-4cb2-ae09-d8cdd6c9f789.jpg?v=1711001863&width=500"
+            class="card-img-top"
+            alt="product"
+          />
+          <div class="card-body">
+            <h5 class="card-title">CU 500</h5>
+            <p class="card-text">Genuine eBikes</p>
+            <a href="#" class="btn btn-primary">View Details</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Brand Section -->
+      <section>
+        <div class="text-center mb-5">
+          <h2 class="font-weight-bold">
+            Genuine Bikes is the proud distributor of these brands.
+          </h2>
+        </div>
+        <div class="d-flex justify-content-center gap-5">
+          <img
+            src="https://www.genuinescooters.com/cdn/shop/files/image_7566.png?v=1706265068&width=151"
+            alt="Brand"
+          />
+          <img
+            src="https://www.genuinescooters.com/cdn/shop/files/image_7566_1.png?v=1706265068&width=151"
+            alt="Brand"
+          />
+          <img
+            src="https://www.genuinescooters.com/cdn/shop/files/image_7566_2.png?v=1706265068&width=100"
+            alt="Brand"
+          />
+          <img
+            src="https://www.genuinescooters.com/cdn/shop/files/image_7566_3.png?v=1706265068&width=151"
+            alt="Brand"
+          />
+          <img
+            src="https://www.genuinescooters.com/cdn/shop/files/image_7567.png?v=1706265068&width=150"
+            alt="Brand"
+          />
+        </div>
+
+        <!-- Feature Section -->
+        <div class="row p-5">
+          <div
+            class="col-md-3 d-flex align-items-start justify-content-start flex-column"
+          >
+            <img
+              src="https://www.genuinescooters.com/cdn/shop/files/footer-icons-fun-v2.png?v=1713210122&width=36"
+              alt="Fun!"
+            />
+            <div class="content mt-3 text-start">
+              <h3 class="fs-4">Fun!</h3>
+              <p>Everyone knows that life is more fun with a Buddy.</p>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <img
+              src="https://www.genuinescooters.com/cdn/shop/files/footer-icons-check-v2.png?v=1713210867&width=36"
+              alt="Check!"
+            />
+            <div class="content mt-3 text-start">
+              <h3 class="fs-4">We've Got You Covered</h3>
+              <p>
+                Genuine Confidence is the best Bikes warranty in America. Our
+                nation-wide network is there for you.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <img
+              src="https://www.genuinescooters.com/cdn/shop/files/footer-icons-hex.png?v=1713210247&width=36"
+              alt="Hex!"
+            />
+            <div class="content mt-3 text-start"></div>
+            <h3 class="fs-4">America's Favorite Scooter Company</h3>
+            <p>
+              Genuine has been creating scooter lovers from all walks of life
+              for over 20 years.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <img
+              src="https://www.genuinescooters.com/cdn/shop/files/footer-icons-heart-v2.png?v=1713210853&width=36"
+              alt="Heart!"
+            />
+            <div class="content mt-3 text-start">
+              <h3 class="fs-4">Feel the Love, It's Genuine!</h3>
+              <p>
+                All Genuine Bikes are built to last.  With a focus on quality
+                and performance, our scooters stand out from the pack.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="bg-white py-5">
+        <div class="container d-flex justify-content-between">
+          <div>
+            <img
+              src="./img/logo.jpg"
+              alt="logo"
+              style="width: 100px; height: auto"
+            />
+            <p>
+              <strong
+                >Stay informed on all <br />things Genuine when <br />you sign
+                up for our <br />newsletter.</strong
+              >
+            </p>
+            <div class="d-flex">
+              <input
+                type="email"
+                class="form-control me-2"
+                placeholder="Enter your email"
+                aria-label="Email Address"
+              />
+              <button class="btn btn-primary">Subscribe</button>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="font-weight-bold">Follow us</h3>
+            <div class="social-icons d-flex flex-column">
+              <div class="mt-1">
+                <a
+                  class="text-dark"
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                >
+                  <i class="fab fa-facebook fa-2x"></i>
+                </a>
+              </div>
+
+              <div class="mt-3">
+                <a
+                  class="text-dark"
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                >
+                  <i class="fab fa-instagram fa-2x"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="font-weight-bold">Payment</h3>
+            <ul class="list-unstyled">
+              <li>
+                <input type="radio" id="item1" name="payment-method" />
+                <label for="item1">ABA</label>
+              </li>
+              <li>
+                <input type="radio" id="item2" name="payment-method" />
+                <label for="item2">AMRET</label>
+              </li>
+              <li>
+                <input type="radio" id="item3" name="payment-method" />
+                <label for="item3">ACLEDA</label>
+              </li>
+            </ul>
+            <label for="visa-number" class="fw-bold">Visa Card Number</label>
+            <input
+              type="text"
+              id="visa-number"
+              name="visa-number"
+              class="form-control"
+              placeholder="Enter your Visa card number"
+              maxlength="16"
+              pattern="[0-9]{16}"
+              required
+            />
+            <button id="pay-now" class="btn btn-primary mt-2">Pay Now</button>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!--bootstrap js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JS -->
+    <script src="Index.js"></script>
+  </body>
+</html>
