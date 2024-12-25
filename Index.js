@@ -35,3 +35,22 @@ document.getElementById("pay-now").addEventListener("click", function () {
       cardNumber
   );
 });
+
+// JavaScript for interactivity
+document.addEventListener("DOMContentLoaded", () => {
+  const buttons = document.querySelectorAll(".tab-button");
+  const tables = document.querySelectorAll(".info-table");
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      // Remove active class from all buttons and tables
+      buttons.forEach((btn) => btn.classList.remove("active"));
+      tables.forEach((table) => table.classList.remove("active"));
+
+      // Add active class to the clicked button and corresponding table
+      button.classList.add("active");
+      const tableId = button.getAttribute("data-tab");
+      document.getElementById(tableId).classList.add("active");
+    });
+  });
+});
