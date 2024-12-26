@@ -6,7 +6,10 @@
     <title>Genuine</title>
     <!--style-css-->
     <link rel="stylesheet" href="index.css" />
-    <link rel="icon" href="./detail/img/Genuine.png" />
+    <link
+      rel="icon"
+      href="https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/897/800/original/Genuine_Logo_JB.png?1596225996"
+    />
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
@@ -17,6 +20,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <style>
       /* Ensure no padding or margin on body or html */
       html,
@@ -24,6 +34,7 @@
         margin: 0;
         padding: 0;
         width: 100%;
+        font-family: "Work Sans", serif;
       }
 
       /* Remove container-fluid padding */
@@ -74,37 +85,67 @@
   <body class="bg-light">
     <div class="container-fluid">
       <!-- Header -->
+      <!-- Header Section -->
       <header
-        class="d-flex justify-content-between align-items-center p-2 bg-white"
+        class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow"
       >
-        <a href="./Index.html" class="logo ms-5">
-          <img
-            src="https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/897/800/original/Genuine_Logo_JB.png?1596225996"
-            width="110"
-            alt="logo"
-          />
-        </a>
-        <!-- Navbar -->
-        <nav>
-          <ul class="nav">
-            <li class="nav-item">
-              <a href="./Index.html" class="nav-link text-dark">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link text-dark">Genuine</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link text-dark">Genuine Pre-Sale</a>
-            </li>
-          </ul>
-        </nav>
-        <!-- Cart Button -->
-        <a href="#" class="btn btn-warning text-dark fw-bold mx-5">Cart</a>
+        <div class="container-fluid">
+          <!-- Logo -->
+          <a href="./Index.html" class="navbar-brand ms-3">
+            <img
+              src="https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/897/800/original/Genuine_Logo_JB.png?1596225996"
+              width="110"
+              alt="logo"
+            />
+          </a>
+
+          <!-- Toggle Button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navbar Links -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a href="./Index.html" class="nav-link text-dark">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link text-dark">Genuine</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link text-dark">Genuine Pre-Sale</a>
+              </li>
+            </ul>
+            <!-- Cart Button -->
+            <a href="#" class="btn btn-warning text-dark fw-bold ms-lg-3"
+              >Login</a
+            >
+          </div>
+        </div>
       </header>
+
+      <!-- Include Bootstrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+      <!-- Custom CSS -->
+      <style>
+        header {
+          width: 100%;
+        }
+      </style>
 
       <!-- e-bike Section -->
       <section
-        class="e-bike d-flex justify-content-center align-items-center text-white"
+        class="e-bike d-flex justify-content-center align-items-center text-white mt-5"
         style="
           background-image: url('https://www.genuinescooters.com/cdn/shop/files/eBike-Collection-banner.webp?v=1712855821&width=1400');
           background-size: cover;
@@ -134,24 +175,61 @@
         </div>
       </section>
 
-      <!-- Card Product Section -->
-      <section
-        class="card-section d-flex flex-wrap justify-content-startgap-5 p-4"
-      >
-        <!-- Product Card -->
-        <div class="card" style="width: 23rem">
-          <img
-            src="https://www.genuinescooters.com/cdn/shop/files/CU500-Main-black_5c5bb890-1965-48e3-99ff-8b5bfcc1a152.jpg?v=1711001863&width=500"
-            class="card-img-top"
-            alt="product"
-          />
-          <div class="card-body">
-            <h5 class="card-title">CU 500</h5>
-            <p class="card-text">$499.00</p>
-            <a href="#form" class="btn btn-primary">Buy Now</a>
+      <!-- Bike Section -->
+      <section>
+        <div class="container-fluid p-5">
+          <div class="row align-items-center bg-white rounded shadow">
+            <!-- Bike Image -->
+            <div class="col-md-6 text-center">
+              <img
+                src="https://www.genuinescooters.com/cdn/shop/files/CU500-Main-black_5c5bb890-1965-48e3-99ff-8b5bfcc1a152.jpg?v=1711001863&width=500"
+                alt="bike"
+                class="img-fluid rounded"
+              />
+            </div>
+
+            <!-- Bike Info -->
+            <div class="col-md-6">
+              <h1 class="display-5 fs-1 fw-bold">CU 500</h1>
+              <h2 class="text-dark fs-5 fw-500">$569.00</h2>
+              <p>
+                The CU 500 will get you to your destination with pure electric
+                power.
+              </p>
+              <p><strong>Color:</strong> Black</p>
+              <a href="#form" class="btn cart-button">Buy Now</a>
+            </div>
           </div>
         </div>
       </section>
+
+      <!-- Custom CSS -->
+      <style>
+        .cart-button {
+          background-color: #ffc107;
+          color: #333;
+          font-weight: bold;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          text-decoration: none;
+          transition: background-color 0.3s ease;
+        }
+
+        .cart-button:hover {
+          transform: scale(1.1);
+          background-color: #e0a800;
+        }
+
+        .col-md-6 img {
+          cursor: pointer;
+        }
+
+        .col-md-6 img:hover {
+          transform: scale(1.1);
+          transition: 0.6s ease;
+        }
+      </style>
 
       <!--About CU 500-->
       <section class="info-section">
@@ -165,15 +243,9 @@
           </button>
         </div>
 
-        <div class="tab-content">
+        <div class="tab-content bg-white">
           <!-- Capacity/Dimensions Table -->
           <table id="capacity-table" class="info-table active">
-            <thead>
-              <tr>
-                <th>Specification</th>
-                <th>Value</th>
-              </tr>
-            </thead>
             <tbody>
               <tr>
                 <td>Cargo Capacity</td>
@@ -195,37 +267,63 @@
                 <td>Width</td>
                 <td>26 in</td>
               </tr>
+              <tr>
+                <td>Wheelbase</td>
+                <td>45 in</td>
+              </tr>
+              <tr>
+                <td>Minimum Seat Height to Ground</td>
+                <td>28.75</td>
+              </tr>
+              <tr>
+                <td>Maximum Seat Height to Ground</td>
+                <td>35.5 in</td>
+              </tr>
+              <tr>
+                <td>Rack Size</td>
+                <td>17x5.5 in</td>
+              </tr>
             </tbody>
           </table>
 
           <!-- Specification Table -->
           <table id="specification-table" class="info-table">
-            <thead>
-              <tr>
-                <th>Specification</th>
-                <th>Value</th>
-              </tr>
-            </thead>
             <tbody>
               <tr>
-                <td>Battery Type</td>
-                <td>Lithium-Ion</td>
+                <td>Battery</td>
+                <td>48V 13Ah Lithium</td>
               </tr>
               <tr>
-                <td>Motor Power</td>
-                <td>500W</td>
+                <td>Motor</td>
+                <td>500W Brushless Geared Motor</td>
               </tr>
               <tr>
-                <td>Top Speed</td>
-                <td>28 mph</td>
+                <td>Max Speed</td>
+                <td>20 MPH (Restricted)</td>
               </tr>
               <tr>
-                <td>Range</td>
-                <td>60 miles</td>
+                <td>Est. Range</td>
+                <td>45+ Miles</td>
               </tr>
               <tr>
-                <td>Charging Time</td>
-                <td>4 hours</td>
+                <td>Display</td>
+                <td>Backlit LCD Display</td>
+              </tr>
+              <tr>
+                <td>Derailleur</td>
+                <td>Shimano AItus 7 Speed</td>
+              </tr>
+              <tr>
+                <td>Freewheel</td>
+                <td>Shimano 7 Speed</td>
+              </tr>
+              <tr>
+                <td>Shifter</td>
+                <td>Shimano Tourney</td>
+              </tr>
+              <tr>
+                <td>Tires</td>
+                <td>27.5" x 24.4"</td>
               </tr>
             </tbody>
           </table>
